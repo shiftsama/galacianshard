@@ -1,0 +1,11 @@
+{
+  "file": "./patches.zip",
+  "patches": [
+    {
+      "file": "PokemonGalacianShard.bps",
+      "name": "Pokémon Galcian Shard v1.0",
+      "description": "",
+      "outputName": "Pokémon Galcian Shard v1.0"
+    }
+  ]
+}
