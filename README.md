@@ -7,6 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
 
 
+
 	<!-- Rom Patcher JS needed CSS/JS files -->
 	<link type="text/css" rel="stylesheet" href="./rom-patcher-js/style.css" media="all" />
 	<script type="text/javascript" src="./rom-patcher-js/RomPatcher.webapp.js"></script>
@@ -19,7 +20,7 @@
 					language: 'en', //default: en
 					requireValidation: false
 				}, {
-					file: './Pokemon Galacian Shard.zip', //zip containing patches
+					file: 'https://shiftsama.github.io/galacianshard/Pokemon Galacian Shard.zip', //zip containing patches
 					name: 'Game (English v1.0)',
 					description: 'English fan translation for Game',
 					outputName: 'Game (English v1.0)', //patched ROM name
