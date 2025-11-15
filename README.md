@@ -19,7 +19,7 @@
 					language: 'en', //default: en
 					requireValidation: false
 				}, {
-					file: '.Pokemon Galacian Shard.zip', //zip containing patches
+					file: './Pokemon Galacian Shard.zip', //zip containing patches
 					name: 'Game (English v1.0)',
 					description: 'English fan translation for Game',
 					outputName: 'Game (English v1.0)', //patched ROM name
