@@ -20,7 +20,7 @@
 					language: 'en', //default: en
 					requireValidation: false
 				}, {
-					file: 'https://shiftsama.github.io/galacianshard/Pokemon Galacian Shard.zip', //zip containing patches
+					file: './pokemongalacianshard.zip', //zip containing patches
 					name: 'Game (English v1.0)',
 					description: 'English fan translation for Game',
 					outputName: 'Game (English v1.0)', //patched ROM name
