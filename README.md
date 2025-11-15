@@ -112,6 +112,17 @@
 		<a href="https://github.com/marcrobledo/RomPatcher.js" target="_blank"><img
 				src="rom-patcher-js/assets/powered_by_rom_patcher_js.png" loading="lazy" />Powered by Rom Patcher JS</a>
 	</div>
+
+    <script type="text/javascript">
+	window.addEventListener('load', function(){
+		const myPatcherSettings={
+			language: 'en',
+			requireValidation: false, /* if true, user won't be able to apply patch if the provided ROM is not valid*/
+			allowDropFiles: false /* if true, it adds basic drag and drop support */
+		};
+		RomPatcherWeb.initialize(myPatcherSettings, 'Pokemon Galacian Shard.ips');
+	});
+</script>
 </body>
 
 </html>
