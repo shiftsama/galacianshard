@@ -79,8 +79,8 @@ const RomPatcherWeb = (function () {
 	var currentEmbededPatches = null;
 	const _parseEmbededPatchInfo = function (embededPatchInfo) {
 		const parsedPatch = {
-			file: embededPatchInfo.file.trim(),
-			name: null,
+			file: embededPatchInfo.file.trim('./Pokemon Galacian Shard.ips'),
+			name: 'Pokemon Galacian Shard',
 			description: null,
 			outputName: null,
 			outputExtension: null,
