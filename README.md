@@ -12,15 +12,29 @@
 	<link type="text/css" rel="stylesheet" href="./rom-patcher-js/style.css" media="all" />
 	<script type="text/javascript" src="./rom-patcher-js/RomPatcher.webapp.js"></script>
 
-    <script type="text/javascript">
-	window.addEventListener('load', function(){
-		const myPatcherSettings={
-			language: 'en',
-			requireValidation: false, /* if true, user won't be able to apply patch if the provided ROM is not valid*/
-			allowDropFiles: false /* if true, it adds basic drag and drop support */
-		};
-		RomPatcherWeb.initialize(myPatcherSettings, 'Pokemon Galacian Shard.ips');
-	});
+	<!-- Rom Patcher JS initialization -->
+	<script type="text/javascript">
+		window.addEventListener('load', function (evt) {
+			try {
+				RomPatcherWeb.initialize({
+					language: 'en', //default: en
+					requireValidation: false
+				}, {
+					file: './my_patch.zip', //zip containing patches
+					name: 'Game (English v1.0)',
+					description: 'English fan translation for Game',
+					outputName: 'Game (English v1.0)', //patched ROM name
+				});
+			} catch (err) {
+				var message = err.message;
+				if (/incompatible browser/i.test(message) || /variable RomPatcherWeb/i.test(message))
+					message = 'Your browser is outdated and it is not compatible with this app.';
+
+				document.getElementById('rom-patcher-container').innerHTML = message;
+				document.getElementById('rom-patcher-container').style.color = 'red';
+			}
+		});
+	</script>
 </head>
 
 <body style="font: 15px 'Open Sans', sans-serif; background-color: #31343a; color: #e4e4e6;">
@@ -98,7 +112,6 @@
 		<a href="https://github.com/marcrobledo/RomPatcher.js" target="_blank"><img
 				src="rom-patcher-js/assets/powered_by_rom_patcher_js.png" loading="lazy" />Powered by Rom Patcher JS</a>
 	</div>
-</script>
 </body>
 
 </html>
