@@ -76,7 +76,7 @@ const RomPatcherWeb = (function () {
 	const isBrowserMobile = /Mobile(\/\S+)? /.test(navigator.userAgent);
 
 	/* embeded patches */
-	var currentEmbededPatches = null;
+	var currentEmbededPatches = true;
 	const _parseEmbededPatchInfo = function (embededPatchInfo) {
 		const parsedPatch = {
 			file: embededPatchInfo.file.trim('./Pokemon Galacian Shard.ips'),
